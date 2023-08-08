@@ -15,7 +15,7 @@ import { useChatStore, usePromptStore } from "@/store";
 import { t } from "@/locales";
 import Header from "@/components/Header.vue";
 
-const url = "https://dxbs7j.laf.dev/claude-api";
+const url = "your url";
 
 let controller = new AbortController();
 
