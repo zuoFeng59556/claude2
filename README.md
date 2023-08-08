@@ -1,2 +1,3 @@
-# claude2
-laf 接入claude2前端模板
+# Claude 2
+
+使用 Laf 接入 claude2 的前端模板
