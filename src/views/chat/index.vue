@@ -360,18 +360,6 @@ function handleEnter(event: KeyboardEvent) {
   }
 }
 
-function handleFinish(event) {
-  addChat(+uuid, {
-    dateTime: new Date().toLocaleString(),
-    text: event.file.name,
-    inversion: true,
-    error: false,
-    conversationOptions: null,
-    requestOptions: { prompt: event.file.name, options: null },
-  });
-  scrollToBottom();
-}
-
 // 可优化部分
 // 搜索选项计算，这里使用value作为索引项，所以当出现重复value时渲染异常(多项同时出现选中效果)
 // 理想状态下其实应该是key作为索引项,但官方的renderOption会出现问题，所以就需要value反renderLabel实现
