@@ -43,7 +43,6 @@ const parentMessageId = ref<string>("");
 const loading = ref<boolean>(false);
 const inputRef = ref<Ref | null>(null);
 let source: CancelTokenSource | null = null;
-const message = useMessage();
 
 // 添加PromptStore
 const promptStore = usePromptStore();
@@ -60,7 +59,6 @@ dataSources.value.forEach((item, index) => {
 
 // 监听发送消息
 async function handleSubmit() {
-  if (!localStorage.getItem("access_token")) return message.error("请先登录哦～");
   onConversation();
 }
 
