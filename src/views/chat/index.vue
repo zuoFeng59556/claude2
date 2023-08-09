@@ -4,7 +4,7 @@ import type { Ref } from "vue";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import { storeToRefs } from "pinia";
-import { NAutoComplete, NButton, NInput, useDialog, useMessage, NUpload } from "naive-ui";
+import { NAutoComplete, NButton, NInput, useDialog, useMessage } from "naive-ui";
 import { Message } from "./components";
 import { useScroll } from "./hooks/useScroll";
 import { useChat } from "./hooks/useChat";
